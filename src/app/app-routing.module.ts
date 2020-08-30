@@ -1,7 +1,24 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import { AppComponent } from './app.component';
+import { NgModule } from '@angular/core';
+import { OverviewComponent } from './views/overview/overview.component';
+
+const routes: Routes = [
+  {
+    path: 'overview',
+    component: OverviewComponent,
+  },
+  {
+    path: '',
+    component: AppComponent,
+  },
+  
+  {
+    path: '**',
+    component: AppComponent,
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
