@@ -1,3 +1,6 @@
+# HowTo
+See the article which describes purpose of this project. -> https://medium.com/@matheus.jey/how-to-provide-content-anywhere-in-the-app-369161331f9a
+
 # SharedDynamicContent
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.8.
