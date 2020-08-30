@@ -1,17 +1,143 @@
-/*
-  This is a "Solution Style" tsconfig.json file, and is used by editors and TypeScript’s language server to improve development experience.
-  It is not intended to be used to perform a compilation.
-
-  To learn more about this file see: https://angular.io/config/solution-tsconfig.
-*/
 {
-  "files": [],
-  "references": [
-    {
-      "path": "./tsconfig.app.json"
+  "compileOnSave": false,
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true,
+    "strictTemplates": true
+  },
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es5",
+    "module": "esnext",
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2018", "dom"],
+    "types": ["jest", "node"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": "./",
+    "paths": {
+      "@mf/shared/layouts": ["libs/shared/layouts/src/index.ts"],
+      "@mf/services/metronic": ["libs/services/metronic/src/index.ts"],
+      "@mf/shared/typings": ["libs/shared/typings/src/index.ts"],
+      "@mf/directives/metronic": ["libs/directives/metronic/src/index.ts"],
+      "@mf/shared/pipes/util-text": [
+        "libs/shared/pipes/util-text/src/index.ts"
+      ],
+      "@mf/shared/services/util-app-root": [
+        "libs/shared/services/util-app-root/src/index.ts"
+      ],
+      "@mf/shared/services/util-app-insights": [
+        "libs/shared/services/util-app-insights/src/index.ts"
+      ],
+      "@mf/shared/login-page/feature-shell": [
+        "libs/shared/login-page/feature-shell/src/index.ts"
+      ],
+      "@mf/shared/login-page/data-access": [
+        "libs/shared/login-page/data-access/src/index.ts"
+      ],
+      "@mf/shared/login-page/feature-main-view": [
+        "libs/shared/login-page/feature-main-view/src/index.ts"
+      ],
+      "@mf/shared/components/ui-charts": [
+        "libs/shared/components/ui-charts/src/index.ts"
+      ],
+      "@mf/cc/endpoints/feature-shell": [
+        "libs/cc/endpoints/feature-shell/src/index.ts"
+      ],
+      "@mf/cc/endpoints/feature-overview": [
+        "libs/cc/endpoints/feature-overview/src/index.ts"
+      ],
+      "@mf/cc/endpoints/data-access": [
+        "libs/cc/endpoints/data-access/src/index.ts"
+      ],
+      "@mf/cc/data-access-api": ["libs/cc/data-access-api/src/index.ts"],
+      "@mf/mspc/data-access-api": ["libs/mspc/data-access-api/src/index.ts"],
+      "@mf/mspc/testing/util": ["libs/mspc/testing/util/src/index.ts"],
+      "@mf/cc/testing/util": ["libs/cc/testing/util/src/index.ts"],
+      "@mf/shared/testing/util": ["libs/shared/testing/util/src/index.ts"],
+      "@mf/shared/components/ui-simple-views": [
+        "libs/shared/components/ui-simple-views/src/index.ts"
+      ],
+      "@mf/mspc/customers/feature-shell": [
+        "libs/mspc/customers/feature-shell/src/index.ts"
+      ],
+      "@mf/mspc/customers/feature-overview": [
+        "libs/mspc/customers/feature-overview/src/index.ts"
+      ],
+      "@mf/mspc/customers/feature-detail": [
+        "libs/mspc/customers/feature-detail/src/index.ts"
+      ],
+      "@mf/mspc/customers/data-access": [
+        "libs/mspc/customers/data-access/src/index.ts"
+      ],
+      "@mf/shared/helpers/util": ["libs/shared/helpers/util/src/index.ts"],
+      "@mf/shared/mocking/util": ["libs/shared/mocking/util/src/index.ts"],
+      "@mf/shared/playground/feature-shell": [
+        "libs/shared/playground/feature-shell/src/index.ts"
+      ],
+      "@mf/shared/playground/feature-examples": [
+        "libs/shared/playground/feature-examples/src/index.ts"
+      ],
+      "@mf/shared/components/ui-grids": [
+        "libs/shared/components/ui-grids/src/index.ts"
+      ],
+      "@mf/shared/components/ui-layout": [
+        "libs/shared/components/ui-layout/src/index.ts"
+      ],
+      "@mf/shared/constants": ["libs/shared/constants/src/index.ts"],
+      "@mf/mspc/customers/util-routing-constants": [
+        "libs/mspc/customers/util-routing-constants/src/index.ts"
+      ],
+      "@mf/cc/data-security/feature-shell": [
+        "libs/cc/data-security/feature-shell/src/index.ts"
+      ],
+      "@mf/cc/data-security/feature-overview": [
+        "libs/cc/data-security/feature-overview/src/index.ts"
+      ],
+      "@mf/cc/data-security/data-access": [
+        "libs/cc/data-security/data-access/src/index.ts"
+      ],
+      "@mf/shared/pipes/util-format": [
+        "libs/shared/pipes/util-format/src/index.ts"
+      ],
+      "@mf/shared/components/ui-tile": [
+        "libs/shared/components/ui-tile/src/index.ts"
+      ],
+      "@mf/shared/components/ui-dialogs": [
+        "libs/shared/components/ui-dialogs/src/index.ts"
+      ],
+      "@mf/shared/directives/custom-button": [
+        "libs/shared/directives/custom-button/src/index.ts"
+      ],
+      "@mf/cc/data-security/utils": [
+        "libs/cc/data-security/utils/src/index.ts"
+      ],
+      "@mf/cc/endpoints/utils": ["libs/cc/endpoints/utils/src/index.ts"],
+      "@mf/shared/features/toast-message": [
+        "libs/shared/features/toast-message/src/index.ts"
+      ],
+      "@mf/shared/features/general-filters": [
+        "libs/shared/features/general-filters/src/index.ts"
+      ],
+      "@mf/cc/dashboard/feature-shell": [
+        "libs/cc/dashboard/feature-shell/src/index.ts"
+      ],
+      "@mf/cc/dashboard/feature-overview": [
+        "libs/cc/dashboard/feature-overview/src/index.ts"
+      ],
+      "@mf/shared/components/ui-buttons": [
+        "libs/shared/components/ui-buttons/src/index.ts"
+      ]
     },
-    {
-      "path": "./tsconfig.spec.json"
-    }
-]
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true
+  },
+  "exclude": ["node_modules", "tmp"]
 }
